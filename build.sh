@@ -18,9 +18,9 @@ else
 fi
 
 # Build the docker images
-docker build . --tag dolibarr-php:"$DOLIBARR_GIT_VERSION" --file docker/php/Dockerfile
-docker build . --tag dolibarr-nginx:"$DOLIBARR_GIT_VERSION" --file docker/nginx/Dockerfile
+docker build . --tag voldlu/dolibarr-php:"$DOLIBARR_GIT_VERSION" --file docker/php/Dockerfile
+docker build . --tag voldlu/dolibarr-nginx:"$DOLIBARR_GIT_VERSION" --file docker/nginx/Dockerfile
 
 # Tag the docker images to latest
-docker tag dolibarr-php:"$DOLIBARR_GIT_VERSION" dolibarr-php:latest
-docker tag dolibarr-nginx:"$DOLIBARR_GIT_VERSION" dolibarr-nginx:latest
+docker tag voldlu/dolibarr-php:"$DOLIBARR_GIT_VERSION" voldlu/dolibarr-php:latest
+docker tag voldlu/dolibarr-nginx:"$DOLIBARR_GIT_VERSION" voldlu/dolibarr-nginx:latest
