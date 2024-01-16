@@ -10,6 +10,7 @@ RUN apk add --no-cache \
       libjpeg-turbo \
       libpng \
       zip \
+      mariadb-client \
       freetype-dev \
       libjpeg-turbo-dev \
       libpng-dev \
