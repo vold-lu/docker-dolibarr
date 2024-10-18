@@ -1,4 +1,4 @@
-FROM php:${PHP_VERSION:-8.1-fpm-alpine}
+FROM php:${PHP_VERSION:-8.2-fpm-alpine}
 
 LABEL maintainer="Aloïs Micard <a.micard@vold.lu>"
 
